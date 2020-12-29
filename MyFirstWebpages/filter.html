@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  href="filter.css">
+	<script src="filter.js"></script>
+	<script src="newSimpleImage.js"></script>
+</head>
+<body>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Filtering an Image</h1>
+<canvas id="d2">
+</canvas>
+<P>
+  Choose your image:
+  <input type="file" multiple="false"
+         accept="image/*" id="finputImage"
+         onchange="uploadImage()">
+  <br><br>
+  <h2>Choose filter</h2>
+  <input type="button" value="Make Grayscale"
+         onclick="makeGray()">
+  <input type="button" value="Make Red"
+         onclick="makeRed()">
+  <input type="button" value="Make Green"
+         onclick="makeGreen()">
+  <input type="button" value="Make Blue"
+         onclick="makeBlue()">
+  <input type="button" value="Make Blur"
+         onclick="blurImage()">
+  <input type="button" value="Make Rainbow"
+         onclick="makeRainbow()">
+  <br><br><br>
+  (The more you mpve the slider the more darker it work in both direction if the image is totally black and you want the original image click on the original image button)<br>
+  Make Dark
+  <input type="range" min="1" max="15"
+         value="1" id="sldr" oninput="changeContrast()">
+  &nbsp
+  <br><br>
+  <input type="button" value="Show Original"
+         onclick="showOriginal()">
+    &nbsp
+  <button onclick="window.location.href = 'filter.html';">Clear Image</button>
+  <br><br>
+  
+  
+ 
+</P>
+</body>
+</html>

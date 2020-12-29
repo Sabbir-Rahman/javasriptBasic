@@ -1,0 +1,27 @@
+// write your code here
+//start with the foreground image 
+var fgImage = new SimpleImage("drewRobert.png");
+//background Image
+var bgImage = new SimpleImage("dinos.png");
+//make a output image with same pixel
+var output = new SimpleImage(fgImage.getWidth(),fgImage.getHeight());
+//write code for each of the steps
+//checking for current pixel if the image fgImage pixel is green then transform the same pixel with the bgImage same pixe
+for(var pixel of fgImage.values()){
+    
+    if(pixel.getGreen()==255){
+    var x =pixel.getX();
+    var y =pixel.getY();
+    //taking the co ordinate of bgpixel
+    var bgPixel = bgImage.getPixel(x,y);
+    //putting bgPixel to the output coordinate wise here fist two parameters indicate coordinate of output image and last parameter indicate replacable image's co-ordinate
+    output.setPixel(x,y,bgPixel);
+    }
+    else
+    {
+        output.setPixel(pixel.getX(), pixel.getY(),pixel);
+    }
+        
+    
+}
+print(output);

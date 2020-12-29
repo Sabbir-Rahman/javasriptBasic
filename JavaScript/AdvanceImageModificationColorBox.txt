@@ -1,0 +1,38 @@
+// write your code here
+
+var img = new SimpleImage(200,200);
+half_width =img.getWidth()/2;
+half_height= img.getHeight()/2;
+for(var pixel of img.values()){
+    var x = pixel.getX();
+    var y = pixel.getY();
+    //1st quardent
+    if(x<=half_width && y<=half_height){
+        pixel.setRed(255);
+        pixel.setBlue(0);
+        pixel.setGreen(0);
+    }
+    //2nd quardent
+    if(x>=half_width && y<=half_height){
+        pixel.setRed(0);
+        pixel.setBlue(0);
+        pixel.setGreen(255);
+    }
+    //3rd quardent
+    if(x<half_width && y>half_height){
+        pixel.setRed(255);
+        pixel.setBlue(255);
+        pixel.setGreen(0);
+        
+    }
+    //4th quardent
+    if(x>=half_width && y>half_height){
+        pixel.setRed(0);
+        pixel.setBlue(255);
+        pixel.setGreen(0);
+        
+    }
+    
+    
+}
+print(img);

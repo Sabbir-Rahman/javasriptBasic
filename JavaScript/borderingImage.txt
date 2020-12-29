@@ -1,0 +1,28 @@
+// write your code here
+
+var img = new SimpleImage("smallpanda.png");
+var width =img.getWidth();
+var height= img.getHeight();
+var thickness=10;
+
+for(var pixel of img.values()){
+    var x = pixel.getX();
+    var y = pixel.getY();
+    if(x<thickness || x>(width-thickness)){
+        black(pixel);
+    }
+    if(y<thickness || y>(height-thickness)){
+        black(pixel);
+    }
+    
+    
+    
+}
+
+function black(pixel){
+    pixel.setBlue(0);
+    pixel.setRed(0);
+    pixel.setGreen(0);
+    return pixel;
+}
+print(img);

@@ -1,0 +1,37 @@
+﻿#d1 {
+    width: 20%;
+    height: 10%;
+    border: 1px solid #c3c3c3;
+}
+
+#d2 {
+    width: 20%;
+    height: 10%;
+    border: 1px solid #c3c3c3;
+}
+
+#d3 {
+    width: 20%;
+    height: 12%;
+    border: 1px solid #c3c3c3;
+}
+
+.hotpinkback {
+    background-color: hotpink;
+}
+
+.limeback {
+    background-color: lime;
+}
+
+.redback {
+    background-color: red;
+}
+
+.yellowback {
+    background-color: yellow;
+}
+
+.whiteback {
+    background-color: white;
+}

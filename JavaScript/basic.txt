@@ -1,0 +1,4 @@
+// write your code here
+ var img = new SimpleImage("smallpanda.png");
+ print(img.getWidth());
+ print(img);

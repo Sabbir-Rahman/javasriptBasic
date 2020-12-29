@@ -1,0 +1,13 @@
+html{
+    background-color:yellow;
+}
+div{
+    font-size: 24px;
+    width: 200px;
+}
+#d1{
+    background-color:lightblue;
+}
+#d2{
+    background-color:orangered;
+}

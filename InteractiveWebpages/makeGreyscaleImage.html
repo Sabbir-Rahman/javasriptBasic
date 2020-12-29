@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grey Scale Image</title>
+	<link rel="stylesheet" href="makeGreyscale.css">
+	<script src="newSimpleImage.js"></script>
+	<script src="makeGreyScale.js"></script>
+</head>
+<body>
+	<h3> Upload and Display Image</h3>
+<canvas id="d2">
+</canvas>
+<P>
+  Filename:
+  <input type="file" multiple="false"
+         accept="image/*" id="finputImage"
+         onchange="uploadImage()">
+  <br><br>
+  <input type="button" value="Make Grayscale"
+         onclick="makeGray()">
+  &nbsp
+  <input type="button" value="Show Original"
+         onclick="uploadImage()">
+ 
+</P>
+
+</body>
+</html>

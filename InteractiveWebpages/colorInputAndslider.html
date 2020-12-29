@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color and slider inputs</title>
+	<link rel="stylesheet" href="colorAndSlider.css">
+</head>
+<body>
+	 <h2>Input and Events</h2>
+  <canvas id="d1">
+  </canvas>
+<p>
+  <!--Change color -->
+  <input type="color" value="#001A57"
+         id="clr" onchange="docolor()">
+  Change Color
+  <!--Slider changer-->
+  <br>
+  <input type="range" min="10" max="100"
+         value="10" id="sldr" oninput="dosquare()">
+</p>
+<script src="colorAndSlider.js"></script>
+</body>
+</html>

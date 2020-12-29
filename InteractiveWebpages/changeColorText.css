@@ -1,0 +1,32 @@
+html {
+    background-color: yellow;
+}
+
+div {
+    font-size: 24px;
+    width: 200px;
+}
+
+.lightblueback {
+    background-color: lightblue;
+}
+
+.orangeredback {
+    background-color: orangered;
+}
+
+.chocolateback {
+    background-color: chocolate;
+}
+
+.cyanback {
+    background-color: cyan;
+}
+
+.lawngreenback {
+    background-color: lawngreen;
+}
+
+.hotpinkback {
+    background-color: hotpink;
+}

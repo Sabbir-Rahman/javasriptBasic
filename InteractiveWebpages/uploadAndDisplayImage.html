@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload and Display Image</title>
+	<link rel="stylesheet" href="uploadAndDisplayImage.css">
+</head>
+<body>
+	<h2>Prototyping image in html</h2>
+<canvas id="d1">
+</canvas>
+<P>
+  Filename:
+  <input type="text" id="finput">
+  &nbsp
+  <input type="button" value="Upload"
+         onclick="upload()">
+</P>
+  <br><br>
+  <h3> Upload and Display Image</h3>
+<canvas id="d2">
+</canvas>
+<P>
+  Filename:
+  <input type="file" multiple="false"
+         accept="image/*" id="finputImage"
+         onchange="uploadImage()">
+
+ 
+</P>
+<script src="newSimpleImage.js"></script>
+<script src="uploadAndDisplayImage.js"></script>
+</body>
+</html>

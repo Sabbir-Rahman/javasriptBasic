@@ -1,0 +1,12 @@
+canvas {
+    width: 80%;
+    border: 1px solid;
+    margin: auto;
+    display: block;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    background-color: lightskyblue;
+}

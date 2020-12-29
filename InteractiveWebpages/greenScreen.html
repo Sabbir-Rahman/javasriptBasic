@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Green Screen</title>
+	<link rel="stylesheet"  href="greenscreen.css">
+	<script src="greenScreen.js"></script>
+	<script src="newSimpleImage.js"></script>
+</head>
+<body>
+	<h2>Green Screen Image</h2>
+<canvas id="foreground">
+</canvas>
+&nbsp&nbsp
+<canvas id="background">
+</canvas>
+<P>
+  Foreground:
+  <input type="file" multiple="false" accept="image/*"
+         id="fgfile"
+         onchange="loadForegroundImage()">
+  <br><br>
+  Background:
+  <input type="file" multiple="false" accept="image/*"
+         id="bgfile"
+         onchange="loadBackgroundImage()">
+  <br><br>
+  <input type="button" value="Make composite"
+         onclick="greenScreen()">
+  &nbsp
+  <button onclick="window.location.href = 'greenscreen.html';">Clear Image</button>
+
+  <!--
+  <input type="button" value="Clear"
+         onclick="clear()">
+     -->
+  <p>
+  	
+
+</body>
+</html>

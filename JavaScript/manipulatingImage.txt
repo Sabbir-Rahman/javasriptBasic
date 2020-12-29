@@ -1,0 +1,47 @@
+// write your code here
+
+var img = new SimpleImage("hilton.jpg");
+var y=img.getWidth()/3;
+//print(y);
+
+
+for(var pixel of img.values()){
+    if(pixel.getX()<y)
+     pixel.setRed(255);
+    if(pixel.getX()>y && pixel.getX()<2*y)
+     pixel.setGreen(255);
+    if(pixel.getX()>2*y && pixel.getX()<3*y)
+     pixel.setBlue(255);
+    //swapRedGreen(pixel);
+}
+
+
+//print(img);
+
+var img1 = new SimpleImage("sadik.jpg");
+
+var x=img1.getWidth()/3;
+for(var pixel1 of img1.values()){
+    if(pixel1.getX()<x)
+       swapRedGreen(pixel1);
+}
+//print(img1);
+
+function swapRedGreen(pixel){
+    pixel.setGreen(pixel.getRed());
+}
+
+var img2 = new SimpleImage("duke_blue_devil.png");
+//print(img2);
+//removing blue with yellow
+for(var pixel2 of img2.values()){
+if(pixel2.getBlue()==227 && pixel2.getGreen()==51 && pixel2.getRed()==0 )
+{
+    pixel2.setBlue(0);
+    pixel2.setRed(255);
+    pixel2.setGreen(255);
+        
+}
+
+}
+print(img2)
